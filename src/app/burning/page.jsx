@@ -1,8 +1,8 @@
 "use client";
 import DefaultLayout from "../../components/maincomp/DefaultLayout";
 import Breadcrumb from "../../components/breadcrump/Breadcrump";
-import React, { useState } from "react";
-import Swal from 'sweetalert2'
+import React, { useState ,useEffect} from "react";
+import Swal from 'sweetalert2';
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ function Burning() {
       setAlert(true);
     };
   
-    React.useEffect(() => {
+    useEffect(() => {
       if (alert) {
         Swal.fire({
           icon: "success",
