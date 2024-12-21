@@ -200,13 +200,13 @@ const divright = useRef(null);
           <div className="flex items-center gap-2">
             {/* Bullet Point */}
             {/* <span className="w-2.5 h-2.5 bg-white rounded-full"></span> */}
-            <p className="text-sm sm:text-base font-merry lg:text-xl text-white font-bold">
+            <p className="text-sm sm:text-base font-roboto lg:text-xl text-white font-bold">
               {item.title}
             </p>
           </div>
-          <p className="text-sm sm:text-base font-merry lg:text-lg text-white font-bold">{item.percentage}</p>
+          <p className="text-sm sm:text-base font-roboto lg:text-lg text-white font-bold">{item.percentage}</p>
         </div>
-        <p className="text-sm sm:text-base lg:text-lg text-white mt-2 font-merry break-words">{item.description}</p>
+        <p className="text-sm sm:text-base lg:text-lg text-white mt-2 font-roboto break-words">{item.description}</p>
         <div className="w-full bg-gray-200 mt-2 rounded-full h-1 dark:bg-gray-700">
           <div
             className="bg-[#4C443F] h-1 rounded-full"
@@ -256,13 +256,13 @@ const divright = useRef(null);
           <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             {/* <span className="w-2.5 h-2.5 bg-white rounded-full"></span> */}
-            <p className="text-sm sm:text-base lg:text-xl text-white font-merry font-bold">
+            <p className="text-sm sm:text-base lg:text-xl text-white font-roboto font-bold">
               {item.title}
             </p>
           </div>
-          <p className="text-sm sm:text-base font-merry lg:text-lg text-white font-bold">{item.percentage}</p>
+          <p className="text-sm sm:text-base  font-roboto lg:text-lg text-white font-bold">{item.percentage}</p>
           </div>
-          <p className="text-sm sm:text-base lg:text-lg text-white font-merry mt-2 break-words">{item.description}</p>
+          <p className="text-sm sm:text-base lg:text-lg text-white  font-roboto mt-2 break-words">{item.description}</p>
           <div className="w-full bg-gray-200 mt-2 rounded-full h-1 dark:bg-gray-700">
             <div
               className="bg-[#4C443F] h-1 rounded-full"

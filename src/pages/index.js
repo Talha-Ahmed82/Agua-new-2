@@ -1,23 +1,15 @@
 import { HeroSection } from "../components/HeroSection";
-// import { ProfitAbleLoan } from "../components/ProfitAbleLoan";
-import { ThreeCard } from "../components/ThreeCard";
-// import GettingCards from "../components/GettingCards";
-// import Image from "next/image";
-import Navbar from "../components/Navbar";
+import SwipeCards from "../components/SwipeCards"
+import SlideTabsExample from "../components/Piechart"
 import  Footer  from "../components/Footer/Footer";
-// import { Youtube } from "../components/Youtube";
-// import Participate from "../components/Participate";
-// import Partners from "../components/Partners";
 import Members from "../components/Members";
 import Followus from "../components/Followus";
-import Stepper from "../components/stepper";
-// import Timeline from "../components/timeline";
-// import Link from "next/link";
+import Stepper from "../components/ExampleWrapper";
 import Pictures from "../components/Pictures";
 import Chart from "../components/Chart";
-// import Distribution from "../components/Distribution";
-// import RoadmapSection from "../components/Distribution";
 import CanvasScene from "../components/Animate";
+import ExampleWrapper from "../components/ExampleWrapper";
+// import SwipeCards from "../components/SwipeCards";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
@@ -35,7 +27,7 @@ export default function Home() {
   return (
     <>
       <main
-      className="overflow-hidden gradient-animation"
+      className="overflow-x-hidden "
       >
         <style jsx>
               {`
@@ -56,13 +48,13 @@ export default function Home() {
                 }
               `}
           </style>
-        <Navbar />
+        {/* <SlideTabsExample/> */}
         <CanvasScene />
         <HeroSection />
         <CanvasScene />
         <Pictures />
         <CanvasScene />
-        <ThreeCard />
+         <SwipeCards/>
         <CanvasScene />
     
       </main>
@@ -91,7 +83,7 @@ export default function Home() {
       {/* <CanvasScene /> */}
       {/* <Distribution /> */}
       {/* <Timeline /> */}
-      <Stepper />
+      <ExampleWrapper />
       <CanvasScene />
         <Chart />
         <CanvasScene />

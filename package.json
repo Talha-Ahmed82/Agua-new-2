@@ -11,7 +11,7 @@
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.39",
     "@amcharts/amcharts5": "^5.10.7",
-    "@lottiefiles/dotlottie-react": "^0.9.1",
+    "@lottiefiles/dotlottie-react": "^0.9.3",
     "@reduxjs/toolkit": "^2.5.0",
     "@thirdweb-dev/react": "^4.9.4",
     "@thirdweb-dev/sdk": "^4.0.99",
@@ -21,7 +21,9 @@
     "chartjs-plugin-datalabels": "^2.2.0",
     "ethers": "^5.7.2",
     "flowbite-react": "^0.10.2",
+    "framer-motion": "^11.15.0",
     "google-fonts": "^1.0.0",
+    "jwt-decode": "^4.0.0",
     "moralis": "^2.27.2",
     "next": "^14.2.18",
     "pino-pretty": "^13.0.0",
