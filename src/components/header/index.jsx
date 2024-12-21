@@ -21,54 +21,54 @@ import { useSelector } from "react-redux";
 //   signOutSuccess,
 // } from "../redux/user/userSlice";
 
-import {
-  updateFailure,
-  updateSuccess,
-  updateStart,
-  deleteUserFailure,
-  deleteUserStart,
-  deleteUserSuccess,
-  signOutSuccess,
-} from "../../app/redux/user/userSlice";
-import { useDispatch } from "react-redux";
+// import {
+//   updateFailure,
+//   updateSuccess,
+//   updateStart,
+//   deleteUserFailure,
+//   deleteUserStart,
+//   deleteUserSuccess,
+//   signOutSuccess,
+// } from "../../app/redux/user/userSlice";
+// import { useDispatch } from "react-redux";
 const Header = (props) => {
   const [hover, setHover] = useState(false);
   const router = useRouter();
  // const [pageName, setPageName] = useLocalStorage("selectedMenu", "dashboard");
- const { currentUser, error, loading } = useSelector((state) => state.user);
-  const [imageFile, setImageFile] = useState(null);
-  const [imageFileUrl, setImageFileUrl] = useState(null);
-  const [imageFileUploadError, setImageFileUploadError] = useState(null);
-  const [imageFileUploading, setImageFileUploading] = useState(false);
-  const [updateUserSuccess, setUpdateUserSuccess] = useState(null);
-  const [updateUserError, setUpdateUserError] = useState(null);
-  const [showModal, setShowModal] = useState(false);
-  const [imageFileUploadingProgress, setImageFileUploadingProgress] =
-    useState(null);
-  const [formData, setFormData] = useState({});
-  const filePickerRef = useRef();
-  const dispatch = useDispatch();
+//  const { currentUser, error, loading } = useSelector((state) => state.user);
+//   const [imageFile, setImageFile] = useState(null);
+//   const [imageFileUrl, setImageFileUrl] = useState(null);
+//   const [imageFileUploadError, setImageFileUploadError] = useState(null);
+//   const [imageFileUploading, setImageFileUploading] = useState(false);
+//   const [updateUserSuccess, setUpdateUserSuccess] = useState(null);
+//   const [updateUserError, setUpdateUserError] = useState(null);
+//   const [showModal, setShowModal] = useState(false);
+//   const [imageFileUploadingProgress, setImageFileUploadingProgress] =
+//     useState(null);
+//   const [formData, setFormData] = useState({});
+//   const filePickerRef = useRef();
+//   const dispatch = useDispatch();
 
- const handleSignOut = async () => {
-  try {
-    const res = await axios.post(
-      "http://localhost:8000/api/user/signout",
-      {
-        withCredentials: true,
-      }
-    );
-    const data = res.data;
-    if (!res.status === 200 || !res.status === 201) {
-      console.log("data-error", data.message);
-    } else {
-      dispatch(signOutSuccess());
-      console.log("Logout Successfully")
-      router.push("/auth/signin")
-    }
-  } catch (error) {
-    console.log(error.message);
-  }
-};
+//  const handleSignOut = async () => {
+//   try {
+//     const res = await axios.post(
+//       "http://localhost:8000/api/user/signout",
+//       {
+//         withCredentials: true,
+//       }
+//     );
+//     const data = res.data;
+//     if (!res.status === 200 || !res.status === 201) {
+//       console.log("data-error", data.message);
+//     } else {
+//       dispatch(signOutSuccess());
+//       console.log("Logout Successfully")
+//       router.push("/auth/signin")
+//     }
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// };
   return (
     <header className="sticky top-0 z-10 flex w-full bg-white drop-shadow-1 dark:bg-[#272727] dark:drop-shadow-none">
       <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
@@ -152,7 +152,8 @@ const Header = (props) => {
         {/* <WalletButton /> */}
         <div className="flex items-center gap-3 2xsm:gap-7">
           <ul className="flex items-center gap-2 2xsm:gap-4">
-          <button className="btn btn-active btn-neutral" onClick={handleSignOut}>Logout</button>
+          {/* <button className="btn btn-active btn-neutral" onClick={handleSignOut}>Logout</button> */}
+          <button className="btn btn-active btn-neutral" >Logout</button>
             <DarkModeSwitcher />
           </ul>
         </div>
