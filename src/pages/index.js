@@ -49,16 +49,16 @@ export default function Home() {
               `}
           </style>
         {/* <SlideTabsExample/> */}
-        <CanvasScene />
+        {/* <CanvasScene /> */}
         <HeroSection />
-        <CanvasScene />
+        {/* <CanvasScene /> */}
         <Pictures />
-        <CanvasScene />
+        {/* <CanvasScene /> */}
          <SwipeCards/>
-        <CanvasScene />
+        {/* <CanvasScene /> */}
     
       </main>
-      <main className="gradient-animation">
+      <main className="">
       <style jsx>{`
         .gradient-animation {
           animation: gradientChange 2s infinite;
@@ -78,17 +78,17 @@ export default function Home() {
       `}
       
       </style>
-      <CanvasScene />
+      {/* <CanvasScene /> */}
       {/* <Youtube /> */}
       {/* <CanvasScene /> */}
       {/* <Distribution /> */}
       {/* <Timeline /> */}
       <ExampleWrapper />
-      <CanvasScene />
+      {/* <CanvasScene /> */}
         <Chart />
-        <CanvasScene />
+        {/* <CanvasScene /> */}
         <Members />
-        <CanvasScene />
+        {/* <CanvasScene /> */}
         {/* <Partners /> */}
         {/* <CanvasScene /> */}
         
