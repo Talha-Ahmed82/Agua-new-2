@@ -546,7 +546,7 @@ import React from "react";
 import SlideTabsExample from "./Piechart";
 import Example1 from "./Example1";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import CanvasScene from "./Animate";
+// import CanvasScene from "./Animate";
 
 export const HeroSection = () => {
 
@@ -558,7 +558,7 @@ export const HeroSection = () => {
           className="absolute top-0 left-0 w-full h-[900px] opacity-30 object-cover z-0"
         />
         <div className="relative z-10 flex flex-col max-w-full h-auto max-h-[800px] mb-40 sm:max-h-[1100px]">
-          <CanvasScene />
+          {/* <CanvasScene /> */}
           <SlideTabsExample />
           <div className="grid grid-cols-1 lg:grid-cols-2 flex-grow overflow-x-hidden ">
             <div
