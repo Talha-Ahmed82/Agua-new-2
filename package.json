@@ -40,7 +40,8 @@
     "sweetalert2": "^11.14.5",
     "swiper": "^11.1.15",
     "three": "^0.169.0",
-    "vanilla-tilt": "^1.8.1"
+    "vanilla-tilt": "^1.8.1",
+    "web3modal": "^1.9.12"
   },
   "devDependencies": {
     "@types/react": "18.3.12",

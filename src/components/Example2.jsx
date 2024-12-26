@@ -1,8 +1,8 @@
 import React from "react";
 
-const Example2 = ({ ButtonName}) => {
+const Example2 = ({ buttonName}) => {
   return (
-    <DrawOutlineButton>{ButtonName}</DrawOutlineButton>
+    <DrawOutlineButton>{buttonName}</DrawOutlineButton>
     
   );
 };
