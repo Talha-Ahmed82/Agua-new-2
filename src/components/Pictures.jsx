@@ -330,7 +330,7 @@ const HorizontalScrollCarousel = () => {
     <>
       <section
         ref={targetRef}
-        className="relative h-[300vh] bg-gradient-radial gradient-bg"
+        className="relative h-[300] bg-gradient-radial gradient-bg"
       >
         {/* <img
           src="/Animate-9.png"
