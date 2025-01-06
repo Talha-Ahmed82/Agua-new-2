@@ -425,8 +425,8 @@
 //     </>
 //   );
 // };
-
 import React, { useState, useEffect } from "react";
+import CanvasScene from "./Animate";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
@@ -442,30 +442,34 @@ const SwipeCards = () => {
   }, [cards]);
 
   return (
-    <div
-      className="flex justify-center h-[750px] gap-40"
-      style={{
-        backgroundImage: `url('/Animate2-pic.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Left div */}
-      <div className="grid w-[550px] place-items-center">
-        {cards.map((card) => (
-          <Card key={card.id} cards={cards} setCards={setCards} {...card} />
-        ))}
-      </div>
+    <>
+      <div
+        className="flex justify-center bg-gradient-radial gradient-bg h-[750px] gap-40"
+        // style={{
+        //   backgroundImage: `url('/Animate2-pic.png')`,
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
+      >
+        {/* <CanvasScene /> */}
+        {/* Left div */}
+        <div className="grid md:w-[550px] place-items-center">
+          {cards.map((card) => (
+            <Card key={card.id} cards={cards} setCards={setCards} {...card} />
+          ))}
+        </div>
 
-      {/* Right div */}
-      {/* <div className="w-[550px] h-full place-items-center">
+        {/* Right div */}
+        {/* <div className="w-[550px] h-full place-items-center">
         <DotLottieReact
           src="https://lottie.host/9c2624b7-1b7b-4e01-8f98-87c5fa9ecf4f/QHG1DliIY5.lottie"
           loop
           autoplay
         />
       </div> */}
-    </div>
+      </div>
+      <hr className="border-2 border-[#D2BA57]" />
+    </>
   );
 };
 
@@ -489,7 +493,7 @@ const Card = ({ id, title, description, smallImage, setCards, cards }) => {
 
   return (
     <motion.div
-      className="relative flex justify-center items-center flex-col h-96 w-72 origin-bottom rounded-lg bg-gradient-to-r from-[#828282] via-[#535353] to-[#272727] p-4 shadow-lg hover:cursor-grab active:cursor-grabbing"
+      className="relative flex justify-center items-center flex-col h-96 w-72 origin-bottom rounded-lg bg-gradient-to-r from-yellow-500 via-yellow-500 to-yellow-700 p-4 shadow-lg hover:cursor-grab active:cursor-grabbing"
       style={{
         gridRow: 1,
         gridColumn: 1,

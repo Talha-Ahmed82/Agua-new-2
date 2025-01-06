@@ -11,177 +11,179 @@ const ExampleWrapper = () => {
   const [isOpen6, setIsOpen6] = useState(false);
   return (
     <>
-      <div className="relative">
-        <img
+      <div>
+        <div className="relative bg-gradient-radial gradient-bg h-[800px]">
+          {/* <img
           src="/Animate-5.png"
           className="absolute top-0 left-0 w-full h-full opacity-50 object-cover z-0"
-        />
-        <h1 className="font-merry text-5xl md:text-6xl  text-[#F6F700] text-center mb-14 mt-5 ">
-          Roadmap
-        </h1>
-        <ul className="timeline timeline-vertical">
-          <li>
-            <div className="timeline-start md:w-60 w-30 mb-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
-              <button
-                onMouseEnter={() => setIsOpen(true)}
-                className="text-black font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
-              >
-                (Q3 2024)
-              </button>
-            </div>
-            <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="text-yellow-500 h-5 mb-6 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <hr className="bg-yellow-500" />
-          </li>
-          <li>
-            <hr className="bg-yellow-500" />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="text-yellow-500 h-5 w-5 mt-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end md:w-60 w-30 mt-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
-              <button
-                onMouseEnter={() => setIsOpen2(true)}
-                className="text-black font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
-              >
-                (Q4 2024)
-              </button>
-            </div>
-            <SpringModal2 isOpen2={isOpen2} setIsOpen2={setIsOpen2} />
-            <hr className="bg-yellow-500 mt-6" />
-          </li>
-          <li>
-            <hr className="bg-yellow-500 mt-6" />
-            <div className="timeline-start md:w-60 w-30 mt-4  timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
-              <button
-                onMouseEnter={() => setIsOpen3(true)}
-                className="text-black font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
-              >
-                (Q1-Q2 2025)
-              </button>
-            </div>
-            <SpringModal3 isOpen3={isOpen3} setIsOpen3={setIsOpen3} />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="text-yellow-500 h-5 w-5 mt-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <hr className="bg-yellow-500 mt-6" />
-          </li>
-          <li>
-            <hr className="bg-yellow-500 mt-6" />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5 text-yellow-500 mt-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end md:w-60 w-30 mt-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
-              <button
-                onMouseEnter={() => setIsOpen4(true)}
-                className="text-black font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
-              >
-                (Q3-Q4 2025)
-              </button>
-            </div>
-            <SpringModal4 isOpen4={isOpen4} setIsOpen4={setIsOpen4} />
-            <hr className="mt-6 bg-yellow-500" />
-          </li>
-          <li>
-            <hr className="mt-6 bg-yellow-500" />
-            <div className="timeline-start mt-4 md:w-60 w-30 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
-              <button
-                onMouseEnter={() => setIsOpen5(true)}
-                className="text-black font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
-              >
-                (2026)
-              </button>
-            </div>
-            <SpringModal5 isOpen5={isOpen5} setIsOpen5={setIsOpen5} />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5 text-yellow-500 mt-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </li>
-          <li>
-            <hr className="mt-6 bg-yellow-500" />
-            <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5 text-yellow-500 mt-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="timeline-end md:w-60 w-30 mt-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
-              <button
-                onMouseEnter={() => setIsOpen6(true)}
-                className="text-black font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"
-              >
-                (2027 and Beyond)
-              </button>
-            </div>
-            <SpringModal6 isOpen6={isOpen6} setIsOpen6={setIsOpen6} />
-          </li>
-        </ul>
-        <hr className="border-[#D2BA57] mt-10" />
+        /> */}
+          <h1 className="font-merry text-5xl md:text-6xl  text-yellow-400 text-center pt-6">
+            Roadmap
+          </h1>
+          <ul className="timeline timeline-vertical">
+            <li>
+              <div className="timeline-start md:w-60 h-14 w-38 mb-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
+                <button
+                  onMouseEnter={() => setIsOpen(true)}
+                  className="text-black font-medium md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity"
+                >
+                  (Q3 2024)
+                </button>
+              </div>
+              <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-yellow-500 h-5 mb-6 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <hr className="bg-yellow-500" />
+            </li>
+            <li>
+              <hr className="bg-yellow-500" />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-yellow-500 h-5 w-5 mt-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end  md:w-60 h-14 w-38 mt-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
+                <button
+                  onMouseEnter={() => setIsOpen2(true)}
+                  className="text-black font-medium md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity"
+                >
+                  (Q4 2024)
+                </button>
+              </div>
+              <SpringModal2 isOpen2={isOpen2} setIsOpen2={setIsOpen2} />
+              <hr className="bg-yellow-500 mt-6" />
+            </li>
+            <li>
+              <hr className="bg-yellow-500 mt-6" />
+              <div className="timeline-start  md:w-60 h-14 w-38 mt-4  timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
+                <button
+                  onMouseEnter={() => setIsOpen3(true)}
+                  className="text-black font-medium md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity"
+                >
+                  (Q1-Q2 2025)
+                </button>
+              </div>
+              <SpringModal3 isOpen3={isOpen3} setIsOpen3={setIsOpen3} />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="text-yellow-500 h-5 w-5 mt-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <hr className="bg-yellow-500 mt-6" />
+            </li>
+            <li>
+              <hr className="bg-yellow-500 mt-6" />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5 text-yellow-500 mt-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end  md:w-60 h-14 w-38 mt-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
+                <button
+                  onMouseEnter={() => setIsOpen4(true)}
+                  className="text-black font-medium md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity"
+                >
+                  (Q3-Q4 2025)
+                </button>
+              </div>
+              <SpringModal4 isOpen4={isOpen4} setIsOpen4={setIsOpen4} />
+              <hr className="mt-6 bg-yellow-500" />
+            </li>
+            <li>
+              <hr className="mt-6 bg-yellow-500" />
+              <div className="timeline-start mt-4  md:w-60 h-14 w-38 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
+                <button
+                  onMouseEnter={() => setIsOpen5(true)}
+                  className="text-black font-medium md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity"
+                >
+                  (2026)
+                </button>
+              </div>
+              <SpringModal5 isOpen5={isOpen5} setIsOpen5={setIsOpen5} />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5 text-yellow-500 mt-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </li>
+            <li>
+              <hr className="mt-6 bg-yellow-500" />
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5 text-yellow-500 mt-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end  md:w-60 h-24 sm:h-14 w-38 mt-6 timeline-box bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509]">
+                <button
+                  onMouseEnter={() => setIsOpen6(true)}
+                  className="text-black font-medium md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity"
+                >
+                  (2027 and Beyond)
+                </button>
+              </div>
+              <SpringModal6 isOpen6={isOpen6} setIsOpen6={setIsOpen6} />
+            </li>
+          </ul>
+        </div>
       </div>
+      <hr className="border-2 border-[#D2BA57]" />
     </>
   );
 };

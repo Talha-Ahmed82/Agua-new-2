@@ -309,8 +309,7 @@
 //     title: "Title 4",
 //     id: 4,
 //   },
-// ];
-import { motion, useTransform, useScroll } from "framer-motion";
+// ];import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import CanvasScene from "./Animate";
 
@@ -328,13 +327,16 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <>
-      <section ref={targetRef} className="relative h-[300] bg-[#0F0D06]">
-        <img
+      <section
+        ref={targetRef}
+        className="relative h-[300vh] bg-gradient-radial gradient-bg"
+      >
+        {/* <img
           src="/Animate-9.png"
           className="absolute top-0 left-0 w-full h-full opacity-30 object-cover z-0"
-        />
+        /> */}
         {/* <CanvasScene /> */}
-        <h1 className="font-merry text-5xl md:text-6xl  text-[#9C7509] text-center mt-54 ">
+        <h1 className="font-merry text-5xl md:text-6xl  text-yellow-400 text-center pt-6 ">
           Operations
         </h1>
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
@@ -345,6 +347,7 @@ const HorizontalScrollCarousel = () => {
           </motion.div>
         </div>
       </section>
+      <hr className="border-2 border-[#D2BA57]" />
     </>
   );
 };

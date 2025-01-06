@@ -93,11 +93,18 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
+      animation: {
+        'move-border': 'moveBorder 3s linear infinite',
+      },
       keyframes: {
                 bgColorChange: {
                    '0%, 100%': { backgroundColor: '#554922' }, // First color
                    '50%': { backgroundColor: '#abcdef' },      // Second color
                  },
+                 moveBorder: {
+                  '0%': { backgroundPosition: '0%' },
+                  '100%': { backgroundPosition: '400%' },
+                },
                },
                animation: {
                  bgColorChange: 'bgColorChange 1s ease-in-out infinite',

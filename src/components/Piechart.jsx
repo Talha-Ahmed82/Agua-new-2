@@ -282,8 +282,120 @@
 //   );
 // };
 
+// import React, { useRef, useState } from "react";
+// import { motion } from "framer-motion";
+// import { useRouter } from "next/navigation";
+// import Example2 from "./Example2";
+
+// export default function SlideTabsExample() {
+//   return <SlideTabs />;
+// }
+
+// const SlideTabs = () => {
+//   const router = useRouter();
+
+//   const handleNav = () => {
+//     router.push("../");
+//   };
+//   const handleNavigation = () => {
+//     router.push("../about");
+//   };
+//   const handleNavigatione = () => {
+//     router.push("../docs");
+//   };
+
+//   const [position, setPosition] = useState({
+//     left: 0,
+//     width: 0,
+//     opacity: 0,
+//   });
+
+//   return (
+//     <>
+//       <div className="flex flex-wrap items-center justify-between h-13 mb-10 mt-4">
+//         {/* Logo */}
+//         <div>
+//           <img
+//             src="/Agua-logo1.png"
+//             className="h-16 w-24 md:h-20 md:w-28 lg:pr-4 sm:mr-0 md:ml-20 mt-4"
+//             alt="Flowbite Logo"
+//           />
+//         </div>
+
+//         {/* Tabs */}
+//         <div>
+//           <ul
+//             onMouseLeave={() => {
+//               setPosition((pv) => ({
+//                 ...pv,
+//                 opacity: 0,
+//               }));
+//             }}
+//             className="relative mx-auto mr-4 sm:mr-16 md:mr-0 flex border-2 rounded-3xl border-b-2 border-[#D0C80D] bg-transparent"
+//           >
+//             <Tab onClick={handleNav} setPosition={setPosition}>
+//               Home
+//             </Tab>
+//             <Tab onClick={handleNavigation} setPosition={setPosition}>
+//               About
+//             </Tab>
+//             <Tab onClick={handleNavigatione} setPosition={setPosition}>
+//               Docs
+//             </Tab>
+//             <Tab setPosition={setPosition}>Ecosystem</Tab>
+
+//             <Cursor position={position} />
+//           </ul>
+//         </div>
+
+//         {/* Buttons */}
+//         <div className="mt-0 md:mt-4 mb-4 md:mb-0 space-x-4">
+//           <Example2 buttonName="SignIn" />
+//           <Example2 buttonName="Connect Wallet" />
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// const Tab = ({ children, onClick, setPosition }) => {
+//   const ref = useRef(null);
+
+//   return (
+//     <li
+//       ref={ref}
+//       onMouseEnter={() => {
+//         if (!ref?.current) return;
+
+//         const { width } = ref.current.getBoundingClientRect();
+
+//         setPosition({
+//           left: ref.current.offsetLeft,
+//           width,
+//           opacity: 1,
+//         });
+//       }}
+//       onClick={onClick}
+//       className="relative z-10 block cursor-pointer px-2 py-3 text-xs uppercase text-white hover mix-blend-difference sm:px-5 sm:py-3 md:text-base"
+//     >
+//       {children}
+//     </li>
+//   );
+// };
+
+// const Cursor = ({ position }) => {
+//   return (
+//     <motion.li
+//       animate={{
+//         ...position,
+//       }}
+//       className="absolute z-0 rounded-3xl bg-gradient-to-r from-[#F6F700] via-yellow-400 to-[#9C7509] h-10 sm:h-12"
+//     />
+//   );
+// };
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import { useRouter } from "next/navigation";
 import Example2 from "./Example2";
 
@@ -302,6 +414,9 @@ const SlideTabs = () => {
   };
   const handleNavigatione = () => {
     router.push("../docs");
+  };
+  const handleNavigational = () => {
+    router.push("../auth/signin");
   };
 
   const [position, setPosition] = useState({
@@ -350,8 +465,8 @@ const SlideTabs = () => {
 
         {/* Buttons */}
         <div className="mt-0 md:mt-4 mb-4 md:mb-0 space-x-4">
-          <Example2 buttonName="SignIn" />
-          <Example2 buttonName="Connect Wallet" />
+          <Example2 onClick={handleNavigational} buttonName="SignIn" />
+          <Example2 onClick={<ConnectWallet />} buttonName="Connect Wallet" />
         </div>
       </div>
     </>
@@ -376,7 +491,7 @@ const Tab = ({ children, onClick, setPosition }) => {
         });
       }}
       onClick={onClick}
-      className="relative z-10 block cursor-pointer px-2 py-3 text-xs uppercase text-white hover mix-blend-difference sm:px-5 sm:py-3 md:text-base"
+      className="relative z-10 block cursor-pointer px-2 py-3 text-xs uppercase text-yellow-400 hover mix-blend-difference sm:px-5 sm:py-3 md:text-base"
     >
       {children}
     </li>

@@ -1,7 +1,7 @@
 import React from "react";
 import CanvasScene from "../Animate";
 
- export default function Footer  () {
+export default function Footer() {
   return (
     <div className="w-full overflow-x-hidden font-san">
       {/* <CanvasScene /> */}
@@ -20,19 +20,30 @@ import CanvasScene from "../Animate";
               {/* <p className=" px-2 text-3xl font-semibold ">Agua</p> */}
               <p className="mt-2 font-roboto">
                 {" "}
-                Discover the power of our<br /> secure and
-                rewarding<br /> Credit Cards
+                Discover the power of our
+                <br /> secure and rewarding
+                <br /> Credit Cards
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-8 sm:gap-6 sm:grid-cols-6 ">
+            <div className="grid grid-cols-3 gap-20 sm:gap-6 sm:grid-cols-6 ">
               <div>
                 <h2 className="mb-6 font-semibold font-merry  text-lg text-white ">
                   About us
                 </h2>
                 <ul className=" text-white font-roboto text-base font-medium">
                   <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
-                      Investors
+                    <a href="/" className="hover:underline">
+                      Home
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="/about" className="hover:underline">
+                      About
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="/docs" className="hover:underline">
+                      Docs
                     </a>
                   </li>
                   <li className="mb-4">
@@ -40,29 +51,15 @@ import CanvasScene from "../Animate";
                       href="https://tailwindcss.com/"
                       className="hover:underline"
                     >
-                      Features
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a
-                      href="https://tailwindcss.com/"
-                      className="hover:underline"
-                    >
-                      Book a demo
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a
-                      href="https://tailwindcss.com/"
-                      className="hover:underline"
-                    >
-                      Security
+                      Ecosystem
                     </a>
                   </li>
                 </ul>
               </div>
-              <div>
-                <h2 className="mb-6  font-semibold font-merry  text-lg ">Products</h2>
+              {/* <div>
+                <h2 className="mb-6  font-semibold font-merry  text-lg ">
+                  Products
+                </h2>
                 <ul className=" font-medium font-roboto">
                   <li className="mb-4 ">
                     <a
@@ -97,7 +94,7 @@ import CanvasScene from "../Animate";
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 <h2 className="mb-6  font-semibold  font-merry text-lg ">
                   Usefull Links
@@ -105,23 +102,25 @@ import CanvasScene from "../Animate";
                 <ul className="font-roboto font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Free Rewards
+                      SAG Smart Contract
                     </a>
                   </li>
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Documentation
+                      SAU Smart Contract
                     </a>
                   </li>
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Affiliation Program
+                      AGUA Smart Contract
                     </a>
                   </li>
                 </ul>
               </div>
-              <div>
-                <h2 className="mb-6  font-semibold  text-lg  font-merry ">Social</h2>
+              {/* <div>
+                <h2 className="mb-6  font-semibold  text-lg  font-merry ">
+                  Social
+                </h2>
                 <ul className=" dark:text-white font-roboto font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
@@ -144,12 +143,11 @@ import CanvasScene from "../Animate";
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </footer>
     </div>
-
-  )
+  );
 }

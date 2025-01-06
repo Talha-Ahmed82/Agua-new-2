@@ -13,6 +13,13 @@
   font-style: normal;
 }
 
+.gradient-bg {
+  background: #6F6866;
+  background: radial-gradient(circle, #6F6866 30%, #916618 100%);
+  background: -moz-radial-gradient(circle, #6F6866 30%, #916618 100%);
+  background: -webkit-radial-gradient(circle, #6F6866 30%, #916618 100%);
+}
+
 @font-face {
   font-family: 'RacingMarkRace';
   src: url('/fonts/RacingMarkRace-xRRaK.otf') format('opentype');
