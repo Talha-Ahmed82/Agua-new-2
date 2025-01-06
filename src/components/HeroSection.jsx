@@ -677,7 +677,7 @@ export const HeroSection = () => {
     <>
       <div className="relative h-[900px]">
         <img
-          src="/Animate image.png"
+          src="/Animate-image.png"
           className="absolute top-0 left-0 w-full h-[900px] opacity-30 object-cover z-0"
         />
         <div className="relative z-10 flex flex-col max-w-full h-auto max-h-[800px] mb-40 sm:max-h-[1100px]">
