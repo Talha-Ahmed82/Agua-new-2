@@ -309,7 +309,8 @@
 //     title: "Title 4",
 //     id: 4,
 //   },
-// ];import { motion, useTransform, useScroll } from "framer-motion";
+// ];
+import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import CanvasScene from "./Animate";
 
